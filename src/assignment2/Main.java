@@ -7,10 +7,12 @@ public class Main {
     public static void main(String[] args) {
         Servicable service = new Bus("City Bus", 2020, 150000.0, 30);
         service.performService();
+        service.getServiceIntervalKm();
 
 
         Servicable carService = new Car("Cool car", 2022, 30000.0, 4);
         carService.performService();
+        carService.getServiceIntervalKm();
 
         List<Vehicle> vehicles = new ArrayList<>();
         vehicles.add(new Car("Toyota Corolla", 2022, 25000.0, 4));

@@ -31,7 +31,7 @@ public class Car extends Vehicle {
 
     @Override
     public int getServiceIntervalKm() {
-        return 100;
+        return 1000;
     }
 
     @Override

@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Fleetapp {
-
     private List<Vehicle> vehicles;
     private Scanner appScanner;
     private boolean running;
@@ -98,7 +97,7 @@ public class Fleetapp {
     }
 
     private void addNewCar() {
-        System.out.println("\n--- Add New Car ---");
+        System.out.println(" Add New Car");
 
         System.out.print("Enter model: ");
         String model = appScanner.nextLine();
@@ -136,9 +135,7 @@ public class Fleetapp {
         }
 
         double total = 0;
-        for (Vehicle v : vehicles) {
-            total += v.calculateInsuranceFee();
-        }
+        for (Vehicle v : vehicles) total += v.calculateInsuranceFee();
 
         System.out.printf(String.valueOf(total));
     }
