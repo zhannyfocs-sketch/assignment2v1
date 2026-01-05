@@ -16,10 +16,6 @@ public class Fleetapp {
         menuCallCount = 0;
     }
 
-    public Fleetapp() {
-        vehicles = new ArrayList<Vehicle>();
-        init();
-    }
 
     public Fleetapp(List<Vehicle> vehicles) {
         this.vehicles = new ArrayList<Vehicle>(vehicles);
